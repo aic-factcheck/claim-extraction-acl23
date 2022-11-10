@@ -25,6 +25,17 @@
 % and will typically save some space.
 \usepackage{microtype}
 
+\newcommand{\q}[1]{``#1''}
+\newcommand{\qit}[1]{\textit{``#1''}}
+\newcommand{\revise}[1]{{\color{blue}#1}}
+\newcommand{\rewrite}[1]{{\color{red}#1}}
+\newcommand{\red}[1]{{\color{red}#1}}
+\newcommand{\revision}[1]{{\color{purple}#1}}
+\newcommand{\jd}[1]{{\color{orange}\textbf{jd: }#1}}
+\newcommand{\hu}[1]{{\color{blue}\textbf{hu: }#1}}
+\newcommand{\mr}[1]{{\color{green}\textbf{mr: }#1}}
+\newcommand{\todo}[1]{{\color{red}\colorbox{yellow}{\textbf{TODO: }}#1}}
+
 % If the title and author information does not fit in the area allocated, uncomment the following
 %
 %\setlength\titlebox{<dim>}
@@ -49,16 +60,16 @@
 %         Author 2 \\ Address line \\ ... \\ Address line \And
 %         Author 3 \\ Address line \\ ... \\ Address line}
 
-\author{First Author \\
+\author{Herbert Ullrich \\
   Affiliation / Address line 1 \\
   Affiliation / Address line 2 \\
   Affiliation / Address line 3 \\
-  \texttt{email@domain} \\\And
-  Second Author \\
+  \texttt{ullriher@fel.cvut.cz} \\\And
+  Jan Drchal \\
   Affiliation / Address line 1 \\
   Affiliation / Address line 2 \\
   Affiliation / Address line 3 \\
-  \texttt{email@domain} \\}
+  \texttt{drchajan@fel.cvut.cz} \\}
 
 \begin{document}
 \maketitle
@@ -68,15 +79,7 @@ The document itself conforms to its own specifications, and is therefore an exam
 These instructions should be used both for papers submitted for review and for final versions of accepted papers.
 \end{abstract}
 
-\section{Introduction}
-
-These instructions are for authors submitting papers to *ACL conferences using \LaTeX. They are not self-contained. All authors must follow the general instructions for *ACL proceedings,\footnote{\url{http://acl-org.github.io/ACLPUB/formatting.html}} and this document contains additional instructions for the \LaTeX{} style files.
-
-The templates include the \LaTeX{} source of this document (\texttt{acl.tex}),
-the \LaTeX{} style file used to format it (\texttt{acl.sty}),
-an ACL bibliography style (\texttt{acl\_natbib.bst}),
-an example bibliography (\texttt{custom.bib}),
-and the bibliography for the ACL Anthology (\texttt{anthology.bib}).
+\input{src/intro}
 
 \section{Engines}
 
