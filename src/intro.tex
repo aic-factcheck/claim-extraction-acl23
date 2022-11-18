@@ -4,12 +4,14 @@
 \subsection{Main todos}
 \begin{enumerate}
     \item Introduce the claim extraction problem (as a combo of check-worthiness \& hallucination-free sum)
-    \item Adapt existing dataset for the claim extraction task:
+    \item Adapt existing dataset(s) for the claim extraction task:
      \begin{itemize}
         \item CNN-Dailymail -- Each point is a pair of article and several-sentences-long \q{highlights}
         \item FEVER -- let's start from the error correction paper -- \url{https://aclanthology.org/2021.acl-long.256/}\\
         Propositional datapoints are at /mnt/data/factcheck/claim\_extraction/ csfeversum/en/0.0.1
     \end{itemize}
+    \item Train a strong baseline for the problem (based on BRIO, Pegasus 2B or at least T5/BART)
+    \item Maybe publish a list of novel claims extracted over some FEVER datapoints or sth? maybe blbost?
 \end{enumerate}
 
 \subsection{Todos after Marian}
