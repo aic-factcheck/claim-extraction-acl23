@@ -1,3 +1,21 @@
 %!TEX ROOT=../acl2023.tex
 \section{Introduction}\label{sec:intro}
 \todo{}
+\subsection{Main todos}
+\begin{enumerate}
+    \item Introduce the claim extraction problem (as a combo of check-worthiness \& hallucination-free sum)
+    \item Adapt existing dataset for the claim extraction task:
+     \begin{itemize}
+        \item CNN-Dailymail -- Each point is a pair of article and several-sentences-long \q{highlights}
+        \item FEVER -- let's start from the error correction paper -- \url{https://aclanthology.org/2021.acl-long.256/}\\
+        Propositional datapoints are at /mnt/data/factcheck/claim\_extraction/ csfeversum/en/0.0.1
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Todos after Marian}
+\begin{enumerate}
+    \item Read Šimon fully
+    \item Mention interesting hallucinations (some unpunished by ROUGE):  i.e., switching the victim and perpetrator of a crime, active/passive verb, numbers are a pitfall
+    \item See arrow datasets -- use dataset\_handler.py from Marian's codebase
+    \item 
+\end{enumerate}
